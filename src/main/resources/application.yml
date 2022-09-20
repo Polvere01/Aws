@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+cloud:
+  aws:
+    region:
+      static: ${AWS-REGION}
+      auto: false
+    stack:
+      auto: false
+    credentials:
+      access-key: ${ACCESS-KEY}
+      secret-key: ${SECRET-KEY}
+    end-point:
+      uri: https://sqs.sa-east-1.amazonaws.com/604065395547/pessoa-queue
